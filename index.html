@@ -964,7 +964,7 @@
             
             try {
                 // Fetch the HTML as text from jsDelivr
-                const url = `https://cdn.jsdelivr.net/gh/donoboy49/HTML-GAMES@main/Other-parts/Game%20Code/${gameId}.html?t=${Date.now()}`;
+                const url = `https://cdn.jsdelivr.net/gh/donoboy49/HTML-GAMES@main/Other-parts/Game%20Code/${gameId}.html`;
                 const response = await fetch(url);
                 if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
                 let html = await response.text();
@@ -1056,7 +1056,7 @@
                 try {
                     // Open new tab exactly like gn-math does
                     const newWindow = window.open("about:blank", "_blank");
-                    const url = `https://cdn.jsdelivr.net/gh/donoboy49/HTML-GAMES@main/Other-parts/Game%20Code/${currentGame.id}.html?t=${Date.now()}`;
+                    const url = `https://cdn.jsdelivr.net/gh/donoboy49/HTML-GAMES@main/Other-parts/Game%20Code/${currentGame.id}.html`;
                     const response = await fetch(url);
                     if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
                     let html = await response.text();
