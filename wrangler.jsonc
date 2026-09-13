@@ -1,7 +1,9 @@
 {
-  "name": "jarona",
-  "compatibility_date": "2026-09-11",
-  "assets": {
-    "directory": "."
+  "observability": {
+    "logs": {
+      "enabled": true,
+      "invocation_logs": true,
+      "persist": true
+    }
   }
 }
